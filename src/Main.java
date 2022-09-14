@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Task1();
+        Task2();
     }
     public  static  void Task1(){
         //Задание1
@@ -41,5 +42,45 @@ public class Main {
 
 
     }
+    public  static void Task2(){
+        //Задание2-Задание2
+        int initialPayment=15_000;
+        float percent=1.07f;
+        byte month=0;
+        int purpose=12_000_000;
+        double i=initialPayment;
+        while( i<=purpose){
+            month+=1;
+            i=i*percent;
+            if (month%6==0) {
+                System.out.println("Месяц "+month+" накопленно "+i);
+            }
+        }
+        //Задание3
+        System.out.println("Задание3");
+        month=0;
 
-}
+        i=initialPayment;
+        while( month<=108){
+            month+=1;
+            i=i*percent;
+            if (month%6==0) {
+                System.out.println("Месяц "+month+" накопленно "+i);
+            }
+        }
+        //Задание4
+        int firstFriday=2;
+        System.out.println("Сегодня пятница,"+firstFriday+"-е число. Необходимо подготовить отчёт");
+        short dayWeek=0;
+        while (dayWeek<=31){
+            dayWeek+=1;
+            if (dayWeek-firstFriday==7 | dayWeek-firstFriday==14 | dayWeek-firstFriday==21){
+                System.out.println("Сегодня пятница, "+dayWeek+"-e чсило. Необходимо подготовть отчёт");
+            }
+            }
+        }
+
+    }
+
+
+
