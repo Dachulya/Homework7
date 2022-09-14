@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         Task1();
         Task2();
+        Task3();
     }
     public  static  void Task1(){
         //Задание1
@@ -79,8 +80,29 @@ public class Main {
             }
             }
         }
+    public  static  void Task3(){
+        // Задание1
+        int from=1822;
+        int before=2122;
+        int i=0;
+        do {
+            i+=79;
+            if (i>1822 & i<2122){
+                System.out.println(i);
+            }
 
-    }
+        }while (i<2122);
+        //Задание 2
+        byte two=0;
+
+        do{
+            two++;
+            System.out.println("2*"+two+"="+(2*two));
+
+        }while (two<10);
+
+
+    }}
 
 
 
